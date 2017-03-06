@@ -1,0 +1,217 @@
+/*Global initialization */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  padding-bottom: 4rem;
+  background: #232F3E;
+}
+
+/*flexbox containing the company logo+name and slogan*/
+.head .flexbox {
+  display:flex;
+  flex-wrap: wrap;
+  color: #FFF;
+  border-bottom: #FFA500 2px solid;
+  background: #232323;
+}
+
+/*Contains logo and name of the company*/
+.company {
+  margin-right: 10rem;
+  justify-content: center;
+  display: flex;
+  flex: 1.2;
+  background: #232323;
+}
+
+.company h1 {
+  margin: 0;
+  padding: 35px 0 0 5px;
+  font: 40px "Lucida Console", monospace;
+}
+
+.company img {
+  margin-left: 10px; /*SHORTHAND*/
+  max-width: 80px;
+  min-width: 50px;
+  max-height: 80px;
+  height: auto;
+
+}
+
+.slogan {
+  padding-top: 24px;
+  flex:2;
+  background-color: #232323; 
+}
+
+.slogan h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Palatino Linotype", Palatino, serif;
+  color: #FFA500;
+}
+
+/*Bootstrap class in the middle section of the page, divided into two 6-wide bootstrap columns*/
+.jumbotron {
+  margin-bottom: 0px;
+  display: flex;
+  background-color: #232F3E;
+}
+
+/*Main image of the page*/
+.jumbotron .container img {
+  max-width: 100%;
+  min-width: 200px;
+  max-height: 350px;
+  height: auto;
+  display: block;
+}
+
+/*Main paragraph of the page*/
+.jumbotron p{
+  text-align : left;
+  font-family: "Trebuchet MS", "Helvetica", sans-serif;
+  color: #FFF;  
+}
+
+/*Contains the labels, inputs, and button of the jumbotron class*/
+.jumbotron form{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Verdana", "Geneva", sans-serif;
+  color: #FFF;
+}
+
+.jumbotron label {
+  width: 100px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.jumbotron form input {
+  width: 25%;
+  margin: 5px 10px 0 0;
+  color: black;
+  background: #FFF;
+}
+
+.jumbotron .btn.btn-primary {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  margin: 2rem 2rem 0 2rem;
+  border: #FFA500 1px solid;
+  font-size: 17px;
+  background: #FFA500;
+  transition-property: color, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.jumbotron .btn.btn-primary:hover {
+  background: #FFF;
+  color: #FFA500;
+  border: #FFA500 1px solid;
+}
+    
+.jumbotron .btn.btn-primary:active {
+  padding : 5px 3rem 5px 3.5rem;
+  font-weight: bold;
+}
+
+/*Features class holds three bootstrap columns, each with an icon and a feature description*/
+.features .container-fluid {
+  padding: 2rem;
+  border-top: #FFA500 solid thick;
+  background: #232323;
+}
+
+.features .col-sm-4 {
+  padding: 0;
+  vertical-align: text-bottom;
+  text-align:center;
+  font-family: "Trebuchet MS", "Helvetica", serif;
+  color: #FFA500;
+}
+
+.features img {
+  max-width: 100px;
+  min-width: 30px;
+  max-height: 100px;
+  height: auto;
+}
+
+.features h3 {
+  padding: 0 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #232323;
+}
+
+/*The footer holds a footer-flexbox dividing the elements into three areas*/
+footer {
+  padding: 0rem 1rem;
+  border-top: #FFA500 3px solid;
+}
+
+.footer-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.copyright {
+  padding: 1rem 0 0;
+  height: 50px;
+  flex: 0.5;
+  text-align: center;
+}
+
+/*misc holds the Terms of Service, Help, and Contact Us links*/
+.misc { flex: 2; }
+
+.misc li {
+  padding-top: 1.75rem;
+  margin: 3px 2px 2px 2px;
+  display: inline-flex;
+}
+
+.misc ul a {
+  letter-spacing: 1px;
+  text-decoration: none !important;
+  color: black;  
+}
+
+.misc ul a:hover {
+  text-decoration: inherit;
+  text-shadow: 0 0 1px #FFA500;
+  color: #FFA500 !important;
+}
+
+.misc ul a:visited { color: black; }
+
+/*Social holds all the social media image links*/
+.social {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
+}
+
+.social ul {
+  padding: 0.75rem 1.5rem 0 0;
+  margin-left: 10px;
+}
+
+.social li{ display: inline-flex; }
+
+.social img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/*Instagram needed its own ID to make adjustments due to the image's size*/
+#insta { max-height: 40px; }

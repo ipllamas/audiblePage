@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>Audible Sign-Up</title>
+  </head>   
+    
+  <body>
+    <!-- Contains the upper section of the page with a flexbox wrapper for its elements-->
+    <section class="head">
+      <div class="flexbox">
+        <div class="company">
+          <a href="#"><img src="./images/audible.png" alt = "Company Logo"></a>
+          <h1>audible</h1>
+        </div>
+        <div class="slogan">
+          <h3>Hear you had a book read to you?</h3>
+        </div>
+       </div>
+    </section> 
+      
+    <!--Contains the middle section, with the main paragraph, image, and input forms of the page, all wrapped in bootsrap classes-->
+    <div class="jumbotron">
+      <div class="container">
+        <img class="col-sm-6" src="./images/woman.jpg">
+        <div class="col-sm-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. <br> Sign up now for a free trial!</p>
+          <form method="get" action="#">
+            <label>First Name</label><input name="first" type="text" placeholder="John"><br>
+            <label>Last Name</label><input name="last" type="text" placeholder="Smith"><br>
+            <label>Email</label><input name="email" type="email" placeholder="john_smith@gmail.com"><br>
+            <label>Password</label><input name="password" type="password" placeholder="***********"><br>
+            <a role="button" class="btn btn-primary" href="#">Sign Up!</a>
+          </form>
+        </div>
+      </div>
+    </div>
+      
+    <!--Contains the features outline of the product, divided into three columns with the use of bootstrap classes-->
+    <div class="features">
+      <div class="container-fluid">
+        <div class="col-sm-4">
+          <img src="./images/book.png" alt="Book Icon">
+          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</h3>
+        </div>
+        <div class="col-sm-4">
+          <img src="./images/headphone.png" alt="Headphone Icon">
+          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</h3>
+        </div>
+        <div class="col-sm-4">
+          <img src="./images/phone.png" alt="Phone Icon">
+          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</h3>
+        </div>
+      </div>
+    </div>
+      
+    <!--Section containing the copyright, Terms of Service and misc. as well as social media image links-->
+    <footer>
+      <div class="footer-flexbox">
+        <div class="copyright">
+          <h4>&copy;Copyright Audible Inc.</h4>
+        </div>
+        <div class="misc">
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul class = "logos">
+            <li><a href="#"><img src= "./images/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#"><img src = "./images/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"><img id = "insta" src= "./images/instagram.png" alt="instagram logo"></a></li>                    
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
